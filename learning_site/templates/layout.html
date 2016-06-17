@@ -10,8 +10,8 @@
     <div class="site-container">
         <header>
             <nav>
-                <a href="/">Home</a> •
-                <a href="/courses">Courses</a>
+                <a href="{% url 'views.index' %}">Home</a>
+                <a href="{% url 'courses:list' %}">Courses</a>
             </nav>
         </header>
         {% block content %}{% endblock %}
