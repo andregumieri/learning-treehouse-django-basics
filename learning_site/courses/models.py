@@ -22,3 +22,6 @@ class Step(models.Model):
 
     def __str__(self):
         return self.title
+
+    def fulltitle(self):
+        return "#{} {}".format(self.order, self.title)
